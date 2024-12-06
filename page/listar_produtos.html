@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../src/img/logo.png" alt="logo">
+            <ul>
+                <li><a href="/index.html">Adicionar Produto</a></li>
+                <li><a href="/page/deletar_produtos.html">Atualizar Produto</a></li>
+                <li><a href="/page/deletar_produtos.html">Deletar Produto</a></li>
+                <li><a href="/page/listar_produtos.html">Listar Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Controle de Estoque</h1>
+
+    <!-- Lista de produtos -->
+    <section id="listar">
+        <h2>Lista de Produtos</h2>
+        <div id="produtos">
+            <?php
+            include 'listar_produtos.php';
+            ?>
+        </div>
+    </section>
+</body>
+</html>
